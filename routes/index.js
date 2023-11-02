@@ -11,7 +11,7 @@ const {Readable} = require('stream')
 const crypto = require('crypto')
 var userModel = require('../models/usermodel')
 
-mongoose.connect('mongodb://0.0.0.0/newspotifyapp').then(() => {
+mongoose.connect('mongodb+srv://pummysahu04:93mWPgsmgTAeZLu0@pummy.zy9kofm.mongodb.net/spotify?retryWrites=true&w=majority').then(() => {
   console.log('connected to database')
 }).catch(err => {
   console.log(err)
